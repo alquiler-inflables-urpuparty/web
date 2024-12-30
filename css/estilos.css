@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#bienvenida {
+    background-color: #f8f9fa;
+}
+
+#servicios .card {
+    margin-bottom: 30px;
+}
+
+/* Carrusel: versión responsive */
+.carousel-responsive {
+    max-width: 800px; /* Ancho máximo del carrusel */
+    height: auto; /* Ajusta automáticamente la altura */
+    margin: 0 auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta contenido fuera de los bordes */
+}
+
+/* Ajustar las imágenes del carrusel */
+.carousel-responsive .carousel-inner .carousel-item img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del carrusel */
+    height: auto; /* Ajusta automáticamente la altura */
+    object-fit: cover; /* Escala la imagen sin distorsión */
+}
+
+/* Controlar el estilo de los controles de navegación */
+.carousel-control-prev, .carousel-control-next {
+    filter: brightness(0) invert(1); /* Hace los botones blancos y visibles */
+}
+
+/* Cambiar color de los enlaces */
+.navbar-nav .nav-link {
+    color: white; /* Color blanco para los enlaces */
+}
+
+/* Cambiar el color del enlace activo */
+.navbar-nav .nav-link.active {
+    color: #f8f9fa; /* Color blanco suave para el enlace activo */
+}
+
+/* Cambiar el color al pasar el mouse por encima de los enlaces */
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Asegura que los enlaces sean visibles cuando el ratón pase por encima */
+}
+
+/* Contacto */
+.contacto {
+    object-fit: cover;
+    width: 300px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 992px) {
+    #bienvenida h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-responsive {
+        max-width: 600px; /* Reduce el tamaño del carrusel para tablets */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-responsive {
+        max-width: 100%; /* Ocupa todo el ancho disponible en móviles */
+    }
+
+    .carousel-responsive .carousel-inner .carousel-item img {
+        object-fit: contain; /* Muestra la imagen completa en lugar de recortarla */
+    }
+
+   
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .contacto {
+        width: 200px;
+    }
+}
